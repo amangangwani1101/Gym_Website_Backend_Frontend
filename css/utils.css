@@ -1,0 +1,32 @@
+.add_display {
+  display: grid;
+}
+.remove_display {
+  display: none;
+}
+.display_section {
+  display: block;
+}
+.btn {
+  border-radius: 4px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 57px;
+}
+
+.container button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Gym</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/customers.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <div class="nav_toggle_icon open_btn"><i class="fad fa-bars"></i></div>
+    <a href="#" class="scroll_top"><i class="fas fa-angle-up"></i></a>
+    <div class="gym_nav_bar">
+      <div class="gym_logo">
+        <img src="./img/logo.png" alt="img_loading" class="gym_logo_img" />
+      </div>
+      <div class="close-btn"><i class="fal fa-times-circle"></i></div>
+      <ul class="gym_nav_links">
+        <li class="gym_link link-1"><a href="#">Home</a></li>
+        <li class="gym_link link-2">
+          <a href="#about_us_section">About Us</a>
+        </li>
+        <li class="gym_link link-3">
+          <a href="#gym_service_section">Services</a>
+        </li>
+        <li class="gym_link link-4">
+          <a href="#gym_client_section">Reviews</a>
+        </li>
+        <li class="gym_link link-5"><a href="#gym_contactUs">contact Us</a></li>
+      </ul>
+      <div class="nav_other_contact_mediums">
+        <button class="call">Call Us</button>
+        <button class="email">Email Us</button>
+      </div>
+    </div>
+    <div class="home_page">
+      <img
+        src="./img/home_bg3.jpg"
+        alt="body_builder"
+        class="home_page_img_laptop"
+      />
+      <img
+        src="./img/home_bg.jpg"
+        alt="body_builder"
+        class="home_page_img_mobile custom_background"
+      />
+    </div>
+    <div class="gym_contactUs">
+      <h2>Get in touch with us!</h2>
+      <div class="close-bt"><i class="fal fa-times-circle"></i></div>
+      <form action="#" class="gym_form">
+        <input
+          type="text"
+          name="name"
+          id="gym_name"
+          class="gym_name_area"
+          placeholder="enter your name"
+        />
+        <input
+          type="text"
+          name="number"
+          id="gym_phone number"
+          class="gym_phone number_area"
+          placeholder="enter your phone number"
+        />
+        <input
+          type="email"
+          name="email"
+          id="gym_email"
+          class="gym_email_area"
+          placeholder="enter your email-Id"
+        />
+      </form>
+      <span class="submit_confirm"></span>
+      <input
+        type="submit"
+        value="Submit"
+        class="btn"
+        onclick="formSubmitter()"
+      />
+    </div>
+    <div class="gym_home_desc">
+      <div class="small_text">Fuel Your</div>
+      <div class="large_text">body fitness</div>
+      <div class="medium_text">
+        When we created Gym Base, we knew we wanted to be more than just a
+        simple gym. Having worked in traditional gyms in the past
+      </div>
+    </div>
+    <div class="gym_links_container">
+      <!-- about us section -->
+      <div class="gym_aboutUs_section" id="about_us_section">
+        <h1 class="gym_aboutUs_heading">About Us</h1>
+        <h2 class="gym_aboutUs_heading_line">
+          we are here to dream! our team is here to serve you
+        </h2>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="./img/home_bg.jpg" />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="./img/home_bg2.jpg" />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="./img/home_bg3.jpg" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="./img/home_bg4.jpg" />
+            <div class="text">Caption Four</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="./img/home_bg5.jpg" />
+            <div class="text">Caption Five</div>
+          </div>
+          <!-- Next and previous buttons -->
+        </div>
+        <br />
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <div class="gym_aboutUs_description">
+          <p class="box_aboutUs_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            vitae accusantium sapiente recusandae quisquam, eaque odit corrupti
+            eveniet e inventore facere incidunt a iusto natus, dicta nam facilis
+            quaerat quidem cum laboriosam. Cumque, odio temporibus.Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Nesciunt vitae
+            accusantium sapiente recusandae quisquam, eaque odit corrupti
+            eveniet error, ducimus quibusdam dolores obcaecati ipsam inventore
+            facere incidunt a iusto natus, dicta nam facilis quaerat quidem cum
+            laboriosam. Cumque, odio temporibus.
+          </p>
+        </div>
+        <!-- <div class="aboutUs_more">
+                    <div class="more">
+                      <img src="./service_card1.jpg" alt="">
+                      <h4>Enviornment</h4>
+                      <p>Clean and dry</p>
+                    </div>
+                    <div class="more">
+                      <img src="./service_card1.jpg" alt="">
+                      <h4>Classes</h4>
+                      <p>Every Level</p>
+                    </div>
+                    <div class="more">
+                      <img src="./service_card1.jpg" alt="">
+                      <h4>Prices</h4>
+                      <p>Affordable</p>
+                    </div> 
+                  </div> -->
+      </div>
+      <hr class="end_aboutUs" />
+      <!-- service section -->
+      <div class="container">
+        <img class="image" src="./img/about_us.png" alt="Image Description">
+        <div class="content">
+          <h2>Content Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae condimentum ligula. Suspendisse potenti. Sed ac diam non lorem sollicitudin sagittis. Duis interdum leo eget tellus sollicitudin tristique.</p>
+        </div>
+      </div>
+      <hr class="end_aboutUs" />
+      <!-- why choose us section -->
+      <div class="client_response" id="gym_client_section">
+        <div class="gym_response_section_logo">
+          <h1>Our clients say's</h1>
+          <p>
+            Gym Base is more than just a gym. We are a training facility where
+            you get expert help reaching your fitness goals.
+          </p>
+        </div>
+        <div class="gym_response_section">
+          <div class="gym_response_section_1">
+            <img src="./img/response_1.png" alt="img" />
+            <p>
+              Oh, would I could describe these conceptions, could impress upon
+              paper all that is living so full and warm within.
+            </p>
+            <div class="response_desc">
+              <h3>- ANDREW MALISH</h3>
+              <h4>FRONTEND DEVELOPER</h4>
+            </div>
+          </div>
+          <div class="gym_response_section_1">
+            <img src="./img/response3.png" alt="img" />
+            <p>
+              Oh, would I could describe these conceptions, could impress upon
+              paper all that is living so full and warm within.
+            </p>
+            <div class="response_desc">
+              <h3>- ANDREW MALISH</h3>
+              <h4>FRONTEND DEVELOPER</h4>
+            </div>
+          </div>
+          <div class="gym_response_section_1">
+            <img src="./img/response2.png" alt="img" />
+            <p>
+              Oh, would I could describe these conceptions, could impress upon
+              paper all that is living so full and warm within.
+            </p>
+            <div class="response_desc">
+              <h3>- ANDREW MALISH</h3>
+              <h4>FRONTEND DEVELOPER</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="end_aboutUs" />
+    </div>
+    <!-- footer section -->
+    
+    
+  <title>Sign Up Button Example</title>
+  <div class="container" style="justify-content: center;">
+    <button onclick="redirectToSignUp()">Sign Up</button>
+  </div>
+
+  <script>
+    function redirectToSignUp() {
+      window.location.href = "signup.html";
+    }
+  </script>
+
+  
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/creative.js"></script>
+  </body>
+</html>

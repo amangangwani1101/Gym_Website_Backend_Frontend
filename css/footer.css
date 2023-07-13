@@ -1,0 +1,91 @@
+.gym_footer_section{
+    background-color: black;
+}
+.link_source{
+    width: 100%;
+    text-align: center;
+}
+.link_source li
+{
+    margin: 10px .6rem;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    transform: scale(1);
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all .5s ease;
+}
+.link:hover{
+    color: white;
+    transition: all .5s ease;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px white;
+}
+.links-1:hover{
+    background-color: red;
+}
+.links-2:hover{
+    background-color:blue;
+}
+.links-3:hover{
+    background-color: darkmagenta;
+}
+.links-4:hover{
+    background-color: blue;
+}
+.links-5:hover
+{
+    background-color: darkblue;
+}
+.gym_footer_section h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 5px 0 10px;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0 0 10px;
+}
+.gym_footer_section h1 span{
+    text-transform: uppercase;
+    transform: scale(1);
+    margin: 0 5px;
+    transition: all .3s ease;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: blinking 2s ease infinite;
+    color: goldenrod;
+}
+@keyframes blinking {
+    0%{
+        text-decoration: underline;
+        color: goldenrod;
+    }
+    25%{
+        text-decoration: none;
+        color: red;
+    }
+    50%{
+        text-decoration: underline;
+        color: blue;
+    }
+    75%{
+        text-decoration: none;
+        color: red;
+    }
+    100%{
+        text-decoration: underline;
+        color: goldenrod;
+    }    
+
+}
+@media screen and (max-width:478px){
+    .link_source li{
+        margin: 10px 0.3rem;
+        font-size: 1rem;
+    }
+    .gym_footer_section h1{
+        font-size: 1.2rem;
+    }
+}
